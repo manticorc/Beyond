@@ -1,0 +1,14 @@
+﻿{
+   
+    "btn_yes": "Yes",
+    "btn_no": "No",
+    "btn_ok": "OK",
+    "btn_cancel": "Cancel",
+    "btn_continue": "Continue",
+    "alert_video": "Video is not ready",
+
+    "diamond": "Diamonds",
+    "gold": "Coins",
+
+    "-end-": "结束"
+}

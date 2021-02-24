@@ -1,3 +1,25 @@
+
+be._env = { // 环境变量预定义，用于测试依赖于环境变量的功能模块
+    dev: {
+        // systemLanguage: "zh-Hans",
+        // systemLanguage: "zh-Hant",
+        // systemLanguage: "ja",
+        // systemLanguage: "ko",
+        // systemLanguage: "ru",
+        systemLanguage: "en",
+        // systemLanguage: "de",
+
+    },
+    debug: {
+
+    }
+};
+
+gs.Config = {
+    appname : "App",
+
+};
+
 // ============================================================================
 gs.Game = {
     initialize: function (scene) {
@@ -5,23 +27,18 @@ gs.Game = {
         if (this._initialized) {
             return;
         }
-        
+        be.App.initialize();
+
         this.regGameEventListener();
         this.setKeyBackCallback();
+
         this._initialized = true;
     },
 
     preload: function () {
         if (this._preloaded) { return; }
-        
-        cc.loader.loadResDir("data", function (err, object) {
-            if (err) {
-                be.logE(err);
-                return;
-            }
-         
-            this._preloaded = true;
-        }.bind(this));
+
+        this._preloaded = true;
     },
 
     regGameEventListener: function () {

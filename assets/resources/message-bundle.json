@@ -1,0 +1,14 @@
+﻿{
+   
+    "btn_yes": "是",
+    "btn_no": "否",
+    "btn_ok": "确定",
+    "btn_cancel": "取消",
+    "btn_continue": "继续",
+    "alert_video": "视频未准备好，请稍等",
+
+    "diamond": "钻石",
+    "gold": "金币",
+
+    "-end-": "结束"
+}

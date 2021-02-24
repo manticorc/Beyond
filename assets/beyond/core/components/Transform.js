@@ -144,5 +144,4 @@ const Transform = cc.Class({
         }
     }
 });
-
 be.Transform = module.exports = Transform;
